@@ -40,6 +40,10 @@ int main(){
             maxven=totven;
             maximo=i;
         }
+
+        if (totven>100) {
+            EMPLEADOS[i].sal*=1.10;
+        }
         cout<<"--------------------------------------------------\n";
         cout<<"Empleado "<<EMPLEADOS[i].num<<": "<<EMPLEADOS[i].nom<<endl;
         cout<<"Ventas mensuales: ";
