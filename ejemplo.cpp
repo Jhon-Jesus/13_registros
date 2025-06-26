@@ -50,7 +50,7 @@ int main(){
         for (int j=0; j<12; j++) {
             cout<<EMPLEADOS[i].ven[j]<<" ";
         }
-        cout<<"\nTotal ventas: "<<totven<<endl;
+        cout<<"\nTotal de ventas: "<<totven<<endl;
 
     }
 
@@ -62,7 +62,7 @@ int main(){
     cout<<"Empleados con ventas menores a 30 en diciembre:\n";
     for (int i=0; i<n; i++) {
         if (EMPLEADOS[i].ven[11]<30) {
-        cout<<"Numero: "<<EMPLEADOS[i].num<<" ---> Nombre: "<<EMPLEADOS[i].nom<<" ---> Venta que tuvo en diciembre: "<<EMPLEADOS[i].ven[11]<<endl;
+        cout<<"Numero de empleado: "<<EMPLEADOS[i].num<<" ---> Nombre: "<<EMPLEADOS[i].nom<<" ---> Venta que tuvo en diciembre: "<<EMPLEADOS[i].ven[11]<<endl;
         }
     }
 

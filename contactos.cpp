@@ -30,6 +30,7 @@ int main(){
         cout<<"Menu de opciones -------------------------"<<endl;
         cout<<"1. Agregar contacto"<<endl;
         cout<<"2. Mostrar contactos"<<endl;
+        cout<<"3. Modificar contacto"<<endl;
         cout<<"0. Salir"<<endl;
         cout<<"Elige una opcion: "; cin>>op;
         switch(op){
@@ -42,7 +43,7 @@ int main(){
                 cout<<"Ingrese el correo electronico (usuario@dominio): "<<endl;
                 cout<<"\tIngrese el usuario: "; cin>>user;
                 cout<<"\tIngrese el dominio: "; cin>>domain;
-                
+
                 leerCorreo(email,user,domain);
                 leerContacto(cont,nom,sex,edad,email);
                 //imprimeContacto(cont);
@@ -59,8 +60,15 @@ int main(){
                 }
                 system("pause");
                 break;
+            case 3:
+            if(n==0){
+            cout<<"No hay contactos para modificar, ingrese primero un contacto"<<endl;
+            }
+
+
             case 0:
                 cout<<"Esta seguro de salir? (S/N): ";
+                if()
                 break;
             default:
                 cout<<"Opcion no valida!"<<endl;
