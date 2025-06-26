@@ -58,6 +58,13 @@ int main(){
     cout<<"Numero: "<<EMPLEADOS[maximo].num<<endl;
     cout<<"Nombre: "<<EMPLEADOS[maximo].nom<<endl;
 
+    cout<<"-----------------------------------------------------------"<<endl;
+    cout<<"Empleados con ventas menores a 30 en diciembre:\n";
+    for (int i=0; i<n; i++) {
+        if (EMPLEADOS[i].ven[11]<30) {
+        cout<<"Numero: "<<EMPLEADOS[i].num<<" ---> Nombre: "<<EMPLEADOS[i].nom<<" ---> Venta que tuvo en diciembre: "<<EMPLEADOS[i].ven[11]<<endl;
+        }
+    }
 
 
     return 0;
